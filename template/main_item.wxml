@@ -1,0 +1,8 @@
+<!--template/main_item.wxml-->
+<template name="titleItem">
+  <view>
+    <view>图片:{{pic}}</view>
+    <view>类别: {{time}}</view>
+    <view>说明:{{introduct}}</view>
+  </view>
+</template>

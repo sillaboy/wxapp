@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<import src="/template/main_item.wxml"></import>
+<block wx:for="{{items}}" wx:key="items" wx:for-item="item" wx:for-index="idx">
+  <template is="titleItem" bindtap="onItemClick" data="{{...item}}"></template>
+</block>
+<text bindtap="viewTap">index page</text>
+<view class="group">
+  <block wx:for="{{iconType}}" wx:key="iconType" wx:for-item="item" wx:for-index="idx">
+    <icon type="{{item}}" size="40" />
+  </block>
+</view>
